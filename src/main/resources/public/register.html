@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+
+        <title>Sign Up</title>
+        <script type="text/javascript" src="validateForm.js"></script>
+
+        <style>
+          body {
+                  background-color: #99CC00;
+                }
+        </style>
+    </head>
+    <body>
+
+
+        <h1>Sign Up</h1>
+        <form id ="signup" onsubmit="return checkPassword()" action="file:///C:/Users/Abhishek/Documents/GitHub/full-stack-web-project-Abhibits/src/main/resources/public/login.html" name="signup">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h4>Personal Information</h4></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td><td><input id = "cust_name" type="text" name="cust_name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td><td><input type="text" name="cust_email" placeholder="yourname@email.com" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td><td><input id="field_pwd1" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." type="password"       required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" placeholder="Xyz@1234"></td>
+                    </tr>
+                    <tr>
+                      <td>Repeat Password:</td><td><input id="field_pwd2" title="Please enter the same Password as above."  type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Address</h4></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Street:</td><td><input type="text" name="street" placeholder="2204 Oakland Avenue" required></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td><td><input type="text" name="city" required></td>
+                    </tr>
+                    <tr>
+                        <td>State:</td><td><input type="text" name="state" placeholder="PA for Pennsylvania" required></td>
+                    </tr>
+                    <tr>
+                        <td>Zipcode:</td><td><input type="text" name="zipcode" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender" value="Female">Female</td>
+                   </tr>
+                    <tr>
+                        <td>Age:</td><td><input type="text" name="age" ></td>
+                    </tr>
+                    <tr>
+                        <td>Income:</td><td><input type="text" name="income" ></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+               <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
